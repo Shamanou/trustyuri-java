@@ -16,18 +16,14 @@ import java.util.zip.GZIPOutputStream;
 import net.trustyuri.TrustyUriException;
 import net.trustyuri.TrustyUriResource;
 
-import org.openrdf.OpenRDFException;
-import org.openrdf.model.Statement;
-import org.openrdf.model.URI;
-import org.openrdf.rio.RDFFormat;
-import org.openrdf.rio.RDFHandlerException;
-import org.openrdf.rio.RDFParser;
-import org.openrdf.rio.RDFWriter;
-import org.openrdf.rio.Rio;
-import org.openrdf.rio.helpers.RDFHandlerBase;
-import org.openrdf.rio.helpers.RDFaParserSettings;
 
 import com.google.code.externalsorting.ExternalSort;
+import org.eclipse.rdf4j.OpenRDFException;
+import org.eclipse.rdf4j.model.Statement;
+import org.eclipse.rdf4j.model.URI;
+import org.eclipse.rdf4j.rio.*;
+import org.eclipse.rdf4j.rio.helpers.RDFHandlerBase;
+import org.eclipse.rdf4j.rio.helpers.RDFaParserSettings;
 
 public class TransformLargeRdf {
 
@@ -60,7 +56,7 @@ public class TransformLargeRdf {
 		md = RdfHasher.getDigest();
 		inputDir = inputFile.getParent();
 		TrustyUriResource r = new TrustyUriResource(inputFile);
-		RDFFormat format = r.getFormat(RDFFormat.TURTLE);
+		RDFFormat format = r.getFormat(RDFFormat.TURTLE).get();
 
 		String name = baseName;
 		if (baseName.indexOf("/") > 0) {

@@ -3,13 +3,13 @@ package net.trustyuri;
 import java.io.IOException;
 import java.util.Arrays;
 
-import org.openrdf.OpenRDFException;
 
 import net.trustyuri.file.ProcessFile;
 import net.trustyuri.rdf.CheckLargeRdf;
 import net.trustyuri.rdf.CheckSortedRdf;
 import net.trustyuri.rdf.TransformLargeRdf;
 import net.trustyuri.rdf.TransformRdf;
+import org.eclipse.rdf4j.OpenRDFException;
 
 /**
  * This class can run the following commands by calling the respective class:
