@@ -1,0 +1,49 @@
+@prefix ex: <http://example.com/> .
+
+ex:x {
+  ex:1 ex:1 ex:1 .
+  ex:1 ex:a ex:1 .
+  ex:a ex:a ex:1 .
+  ex:1 ex:a ex:a .
+  ex:1 ex:a "1" .
+  ex:a ex:1 "a" .
+}
+
+ex:y {
+  ex:a ex:1 ex:1 .
+  ex:1 ex:a ex:1 .
+  ex:a ex:a ex:1 .
+  ex:1 ex:1 ex:a .
+  ex:a ex:1 ex:a .
+  ex:a ex:a ex:a .
+  ex:1 ex:a "1" .
+  ex:a ex:1 "a" .
+  ex:a ex:a ex:1 .
+}
+
+ex:1 {
+  ex:1 ex:1 ex:1 .
+  ex:a ex:1 ex:1 .
+  ex:1 ex:a ex:1 .
+  ex:a ex:a ex:1 .
+  ex:1 ex:1 ex:a .
+  ex:a ex:1 ex:a .
+  ex:1 ex:a ex:a .
+  ex:a ex:a ex:a .
+  ex:a ex:1 "1" .
+  ex:1 ex:a "a" .
+  ex:1 ex:a ex:a .
+}
+
+ex:a {
+  ex:1 ex:1 ex:1 .
+  ex:a ex:1 ex:1 .
+  ex:1 ex:a ex:1 .
+  ex:a ex:a ex:1 .
+  ex:1 ex:1 ex:a .
+  ex:a ex:1 ex:a .
+  ex:1 ex:a ex:a .
+  ex:a ex:a ex:a .
+  ex:1 ex:a "1" .
+  ex:a ex:1 "a" .
+}

@@ -1,0 +1,6 @@
+@prefix this: <http://trustyuri.net/testsuite/whitespace.RA9GZZpn3DbLz2UK3vbJbSUY_-p1K-wc-2CVEAvDv2ZRA> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix pav: <http://purl.org/pav/> .
+
+<http://trustyuri.net/testsuite/whitespace.RA9GZZpn3DbLz2UK3vbJbSUY_-p1K-wc-2CVEAvDv2ZRA> dc:title """This is  some text  with 	whitespacex 
+ characters""" .

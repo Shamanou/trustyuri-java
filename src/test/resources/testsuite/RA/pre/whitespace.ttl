@@ -1,0 +1,5 @@
+@prefix : <http://trustyuri.net/testsuite/whitespace> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix pav: <http://purl.org/pav/> .
+
+: dc:title "This is \f some text \r with \twhitespacex\b \n characters" .

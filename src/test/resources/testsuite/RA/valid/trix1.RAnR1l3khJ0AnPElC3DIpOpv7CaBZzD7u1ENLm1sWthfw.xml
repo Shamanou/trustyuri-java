@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TriX xmlns='http://www.w3.org/2004/03/trix/trix-1/'>
+	<graph>
+		<triple>
+			<uri>http://trustyuri.net/testsuite/trix1.RAnR1l3khJ0AnPElC3DIpOpv7CaBZzD7u1ENLm1sWthfw</uri>
+			<uri>http://purl.org/dc/elements/1.1/title</uri>
+			<plainLiteral>TriX example 1</plainLiteral>
+		</triple>
+		<triple>
+			<uri>http://trustyuri.net/testsuite/trix1.RAnR1l3khJ0AnPElC3DIpOpv7CaBZzD7u1ENLm1sWthfw</uri>
+			<uri>http://purl.org/pav/authoredBy</uri>
+			<uri>http://trustyuri.net/testsuite/trix1.RAnR1l3khJ0AnPElC3DIpOpv7CaBZzD7u1ENLm1sWthfw#_1</uri>
+		</triple>
+		<triple>
+			<uri>http://trustyuri.net/testsuite/trix1.RAnR1l3khJ0AnPElC3DIpOpv7CaBZzD7u1ENLm1sWthfw#_1</uri>
+			<uri>http://xmlns.com/foaf/0.1/name</uri>
+			<plainLiteral>Tobias Kuhn</plainLiteral>
+		</triple>
+	</graph>
+</TriX>

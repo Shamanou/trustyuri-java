@@ -1,0 +1,36 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ex: <http://example.com/foo> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex: dc:title "This is a string"^^xsd:string .
+ex: dc:title "This is a string" .
+ex: dc:title "This is a string"@en .
+ex: dc:title "This is a string"@en-US .
+ex: dc:title "This is a string"^^xsd:string .
+ex: dc:title "42"^^xsd:int .
+ex: dc:title "42" .
+ex: dc:title ex:myTitle .
+ex: ex:relation ex:something .
+ex: ex: ex: .
+
+ex: dc:title "This is a string"^^xsd:string .
+ex: dc:title "This is a string" .
+ex: dc:title "This is a string"@en .
+ex: dc:title "This is a string"@en-US .
+ex: dc:title "This is a string"^^xsd:string .
+ex: dc:title "42"^^xsd:int .
+ex: dc:title "42" .
+ex: dc:title ex:myTitle .
+ex: ex:relation ex:something .
+ex: ex: ex: .
+
+ex: dc:title "This is a string"^^xsd:string .
+ex: dc:title "This is a string" .
+ex: dc:title "This is a string"@en .
+ex: dc:title "This is a string"@en-US .
+ex: dc:title "This is a string"^^xsd:string .
+ex: dc:title "42"^^xsd:int .
+ex: dc:title "42" .
+ex: dc:title ex:myTitle .
+ex: ex:relation ex:something .
+ex: ex: ex: .

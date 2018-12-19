@@ -1,0 +1,5 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ex: <http://example.com/foo> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex: dc:title "This is a string \u0000 \u5555 \u10ffff \u4444 \u3333 with unicode characters"^^xsd:string .

@@ -1,0 +1,6 @@
+@prefix : <http://trustyuri.net/testsuite/carriagereturn> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix pav: <http://purl.org/pav/> .
+
+: dc:title "This is some text \r with a carriage return character" ;
+  pav:createdBy <http://orcid.org/0000-0002-1267-0234> .

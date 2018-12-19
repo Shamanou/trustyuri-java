@@ -1,0 +1,5 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ex: <http://example.com/foo> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.com/foo> dc:title <http://example.com/foo42> , " 42 "@en , " 42 "@en-gb , " 42 "@en-us , " 42 "^^xsd:int , " 42 " , " 42 " , "42"@en , "42"@en-gb , "42"@en-us , "42"^^xsd:int , "42" , "42" , "43"@en , "43"@en-gb , "43"@en-us , "43"^^xsd:int , "43" , "43" .

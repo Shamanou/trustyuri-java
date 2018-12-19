@@ -1,0 +1,5 @@
+@prefix this: <http://trustyuri.net/testsuite/language-de1.RAalZIsk4BTDcuA_hvKuCo6s6MFkDyX7210Z9epifEw9s> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ex: <http://example.com/foo> .
+
+<http://example.com/foo> dc:title "Taxi taxi"@de .

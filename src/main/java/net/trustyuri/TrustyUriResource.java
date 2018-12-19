@@ -102,12 +102,12 @@ public class TrustyUriResource {
         return TrustyUriUtils.getModuleId(artifactCode);
     }
 
-    public Optional<RDFFormat> getFormat(RDFFormat defaultFormat) {
+    public RDFFormat getFormat(RDFFormat defaultFormat) {
         Optional<RDFFormat> format = Rio.getParserFormatForMIMEType(getMimetype());
         if (format.isPresent()) {
-            return Rio.getParserFormatForFileName(getFilename());
+            return Rio.getParserFormatForFileName(getFilename()).get();
         }
-        return format;
+        return format.get();
     }
 
 }

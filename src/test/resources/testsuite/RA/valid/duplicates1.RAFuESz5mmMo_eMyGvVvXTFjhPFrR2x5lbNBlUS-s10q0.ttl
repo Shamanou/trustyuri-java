@@ -1,0 +1,7 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ex: <http://example.com/foo> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.com/foo> <http://example.com/foo> <http://example.com/foo> , <http://example.com/foo> , <http://example.com/foo> ;
+	<http://example.com/foorelation> <http://example.com/foosomething> , <http://example.com/foosomething> , <http://example.com/foosomething> ;
+	dc:title <http://example.com/foomyTitle> , <http://example.com/foomyTitle> , <http://example.com/foomyTitle> , "42"^^xsd:int , "42"^^xsd:int , "42"^^xsd:int , "42" , "42" , "42" , "This is a string"@en , "This is a string"@en , "This is a string"@en , "This is a string"@en-us , "This is a string"@en-us , "This is a string"@en-us , "This is a string" , "This is a string" , "This is a string" , "This is a string" , "This is a string" , "This is a string" , "This is a string" , "This is a string" , "This is a string" .

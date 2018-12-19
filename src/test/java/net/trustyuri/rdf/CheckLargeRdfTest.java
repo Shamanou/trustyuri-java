@@ -5,6 +5,7 @@ import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
 
 import java.io.File;
+import java.util.Objects;
 
 public class CheckLargeRdfTest {
 
@@ -15,13 +16,13 @@ public class CheckLargeRdfTest {
     public void runTest() throws Exception {
         File testSuiteDir = new File("src/main/resources/testsuite/RA/valid/");
         if (testSuiteDir.isDirectory()) {
-            for (File testFile : testSuiteDir.listFiles()) {
+            for (File testFile : Objects.requireNonNull(testSuiteDir.listFiles())) {
                 test(testFile.getName());
             }
         }
     }
 
-    public void test(String filename) throws Exception {
+    private void test(String filename) throws Exception {
         File file = new File("src/main/resources/testsuite/RA/valid/" + filename);
         CheckLargeRdf c = new CheckLargeRdf(file);
         boolean valid = c.check();

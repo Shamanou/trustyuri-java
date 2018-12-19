@@ -22,8 +22,8 @@ import java.util.List;
 public class CheckLargeRdf {
 
     private File file;
-    private MessageDigest md;
     private String ac;
+
     public CheckLargeRdf(File file) {
         this.file = file;
     }
@@ -43,8 +43,8 @@ public class CheckLargeRdf {
         TrustyUriResource r = new TrustyUriResource(file);
         File dir = file.getParentFile();
         String fileName = file.getName();
-        md = RdfHasher.getDigest();
-        RDFFormat format = r.getFormat(RDFFormat.TURTLE).get();
+        MessageDigest md = RdfHasher.getDigest();
+        RDFFormat format = RDFFormat.TURTLE;
 
         RDFParser p = Rio.createParser(format);
         p.getParserConfig().set(RDFaParserSettings.FAIL_ON_RDFA_UNDEFINED_PREFIXES, true);

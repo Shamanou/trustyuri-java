@@ -164,7 +164,7 @@ public class RdfUtils {
     }
 
     public static RdfFileContent load(TrustyUriResource r) throws IOException, TrustyUriException {
-        return load(r.getInputStream(), r.getFormat(RDFFormat.TURTLE).get());
+        return load(r.getInputStream(), RDFFormat.TURTLE);
     }
 
     public static void fixTrustyRdf(File file) throws IOException, TrustyUriException {

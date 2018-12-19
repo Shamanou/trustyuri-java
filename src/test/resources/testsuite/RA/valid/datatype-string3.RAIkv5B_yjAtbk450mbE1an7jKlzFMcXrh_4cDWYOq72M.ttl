@@ -1,0 +1,6 @@
+@prefix this: <http://trustyuri.net/testsuite/datatype-string3.RAIkv5B_yjAtbk450mbE1an7jKlzFMcXrh_4cDWYOq72M> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ex: <http://example.com/foo> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.com/foo> dc:title "42" .

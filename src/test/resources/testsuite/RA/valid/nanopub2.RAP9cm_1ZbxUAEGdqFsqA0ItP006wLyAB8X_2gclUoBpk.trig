@@ -1,0 +1,30 @@
+@prefix this: <http://trustyuri.net/testsuite/nanopub2.RAP9cm_1ZbxUAEGdqFsqA0ItP006wLyAB8X_2gclUoBpk> .
+@prefix sub: <http://trustyuri.net/testsuite/nanopub2.RAP9cm_1ZbxUAEGdqFsqA0ItP006wLyAB8X_2gclUoBpk#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix opm: <http://purl.org/net/opmv/ns#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix ex: <http://example.com/> .
+
+sub:Head {
+	<http://trustyuri.net/testsuite/nanopub2.RAP9cm_1ZbxUAEGdqFsqA0ItP006wLyAB8X_2gclUoBpk> np:hasAssertion sub:assertion ;
+		np:hasProvenance sub:provenance ;
+		np:hasPublicationInfo sub:pubinfo ;
+		a np:Nanopublication .
+}
+
+sub:assertion {
+	ex:mosquito owl:subClassOf ex:dangerousAnimal .
+}
+
+sub:provenance {
+	sub:assertion prov:wasDerivedFrom <http://trustyuri.net/testsuite/nanopub1.RAC__rNHIdWuEBi0QWf7FaCcNzfbUyXfz98ds_b8Ho3D8> .
+}
+
+sub:pubinfo {
+	<http://trustyuri.net/testsuite/nanopub2.RAP9cm_1ZbxUAEGdqFsqA0ItP006wLyAB8X_2gclUoBpk> dc:created "2013-02-25T14:33:21+01:00"^^xsd:dateTime ;
+		pav:createdBy <http://orcid.org/0000-0002-1267-0234> .
+}

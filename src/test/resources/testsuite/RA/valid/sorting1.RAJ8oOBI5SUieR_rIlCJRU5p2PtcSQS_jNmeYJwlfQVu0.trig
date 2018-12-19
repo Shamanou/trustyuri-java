@@ -1,0 +1,34 @@
+@prefix this: <http://trustyuri.net/testsuite/sorting1.RAJ8oOBI5SUieR_rIlCJRU5p2PtcSQS_jNmeYJwlfQVu0> .
+@prefix ex: <http://example.com/> .
+
+ex:1 {
+	ex:1 ex:1 ex:1 , ex:a ;
+		ex:a ex:1 , ex:a , ex:a , "a" .
+	
+	ex:a ex:1 ex:1 , ex:a , "1" ;
+		ex:a ex:1 , ex:a .
+}
+
+ex:a {
+	ex:1 ex:1 ex:1 , ex:a ;
+		ex:a ex:1 , ex:a , "1" .
+	
+	ex:a ex:1 ex:1 , ex:a , "a" ;
+		ex:a ex:1 , ex:a .
+}
+
+ex:x {
+	ex:1 ex:1 ex:1 ;
+		ex:a ex:1 , ex:a , "1" .
+	
+	ex:a ex:1 "a" ;
+		ex:a ex:1 .
+}
+
+ex:y {
+	ex:1 ex:1 ex:a ;
+		ex:a ex:1 , "1" .
+	
+	ex:a ex:1 ex:1 , ex:a , "a" ;
+		ex:a ex:1 , ex:1 , ex:a .
+}
