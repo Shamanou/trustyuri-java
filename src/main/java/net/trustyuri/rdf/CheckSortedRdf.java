@@ -51,7 +51,7 @@ public class CheckSortedRdf {
                     " (this function only supports " + RdfModule.MODULE_ID + ")");
             System.exit(1);
         }
-        RDFFormat format = r.getFormat(RDFFormat.TURTLE).get();
+        RDFFormat format = RDFFormat.TURTLE;
 
         RDFParser p = Rio.createParser(format);
         previous = null;

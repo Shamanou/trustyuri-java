@@ -181,7 +181,7 @@ public class RdfUtils {
         } else {
             out = new FileOutputStream(new File("fixed." + filename));
         }
-        RDFWriter writer = Rio.createWriter(r.getFormat(RDFFormat.TRIG).get(), new OutputStreamWriter(out, Charset.forName("UTF-8")));
+        RDFWriter writer = Rio.createWriter(RDFFormat.TRIG, new OutputStreamWriter(out, Charset.forName("UTF-8")));
         TransformRdf.transformPreprocessed(content, null, writer);
     }
 

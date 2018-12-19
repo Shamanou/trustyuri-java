@@ -1,6 +1,7 @@
 package net.trustyuri.rdf;
 
 import java.io.File;
+import java.util.Objects;
 
 import net.trustyuri.CheckFile;
 
@@ -18,7 +19,7 @@ public class CheckRdfTest {
 	public void runTest() throws Exception {
 		File testSuiteDir = new File("src/main/resources/testsuite/RA/valid/");
 		if (testSuiteDir.isDirectory()) {
-			for (File testFile : testSuiteDir.listFiles()) {
+			for (File testFile : Objects.requireNonNull(testSuiteDir.listFiles())) {
 				test(testFile.getName());
 			}
 		}
